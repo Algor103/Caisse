@@ -20,6 +20,8 @@ public class Fournisseur {
     private String matfisc;
     private int solde_init;
     private int solde;
+    private String login;
+    private String pwd;
 
     public long getId() {
         return id;
@@ -93,8 +95,20 @@ public class Fournisseur {
       public void setSolde(int solde) {
         this.solde = solde;
       }
+        public String getLogin() {
+            return login;
+        }
+        public void setLogin(String login) {
+            this.login = login;
+        }
+        public String getPwd() {
+            return pwd;
+        }
+        public void setPwd(String pwd) {
+            this.pwd = pwd;
+        }
 
-      public Fournisseur(long id, String code, String adresse, String libelle, String tel, String email, String contact, String timbre, String asuj, String matfisc,  int solde_init, int solde ) {
+      public Fournisseur(long id, String code, String adresse, String libelle, String tel, String email, String contact, String timbre, String asuj, String matfisc,  int solde_init, int solde, String login, String pwd) {
 
         super();
         this.id = id;
@@ -109,6 +123,8 @@ public class Fournisseur {
         this.matfisc = matfisc;
         this.solde = solde;
         this.solde_init = solde;
+        this.login = login;
+        this.pwd = pwd;
       }
   
       public Fournisseur() {
@@ -119,6 +135,6 @@ public class Fournisseur {
     public String toString() {
        return "Client [id=" + id + ", code=" + code + ", libelle=" + libelle + ", adresse=" 
                + adresse + ", tel=" + tel + ", email=" + email + ", matfisc=" + matfisc 
-               + ", timbre=" + timbre + ", solde_init=" + solde_init + ", solde=" + solde +"]";
+               + ", timbre=" + timbre + ", solde_init=" + solde_init + ", solde=" + solde + ", login=" + login + ", pwd=" + pwd + "]";
     }
 }

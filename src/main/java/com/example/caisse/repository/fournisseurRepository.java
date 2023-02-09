@@ -1,9 +1,12 @@
 package com.example.caisse.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import com.example.caisse.model.Fournisseur;
 import org.springframework.stereotype.Repository;
-import java.util.Optional;
 
-public class fournisseurRepository {
+@Repository
+public interface FournisseurRepository extends JpaRepository<Fournisseur, Long> {
     
-}
+        
+    }
+    

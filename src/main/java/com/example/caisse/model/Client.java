@@ -90,7 +90,7 @@ public class Client {
     public void setLogin(String login) {
       this.login = login;
     }
-    public String pwd() {
+    public String getPwd() {
       return pwd;
     }
     public void setPwd(String pwd) {
